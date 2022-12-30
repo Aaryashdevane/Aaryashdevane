@@ -23,4 +23,14 @@ int swap(int *a,int *b)
 *a= *b;
 *b=temp;
 }
-hjhk
+
+#include<stdio.h>
+
+int main()
+{ int a=34;
+int *j=&a;
+printf("the address of a is %u\n",j);
+printf("the value of a using adress variable%d\n",*j);
+return 0;
+}
+
