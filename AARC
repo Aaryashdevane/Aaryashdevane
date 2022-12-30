@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+int swap(int *a,int *b);
+
+int main()
+{
+    int a=23,b=32;
+    printf("the value of a and b before swapping the numbers is %d\n%d\n",a,b);
+   // wrongswap(a ,b);
+   swap(&a,&b);
+    printf("the value of a and b after after the swapping the numbers %d\n%d\n",a,b);
+    return 0;
+}
+
+
+ 
+ 
+int swap(int *a,int *b)
+ { int temp= *a;
+*a= *b;
+*b=temp;
+}
