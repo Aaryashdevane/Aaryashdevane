@@ -218,6 +218,221 @@ int  *j=&b;
 the adress of a is 2541210284
 the adress of b is 2541210288
 the differnce  is 4
+===========================================================================================================================================================
+ 
+ #include<stdio.h>
+int main ()
+{ int marks[4];
+int *ptr=&marks[0];
+ for (int i=0;i<4;i++)
+ {printf("enter the marks of student %d\n",i+1);
+ scanf("%d",&marks[i]);
+ }
+ 
+ for(int i=0;i<4;i++)
+ {
+     printf("the marks of student entered are %d is %d\n",i+1,marks[i]);
+}
+return 0;
+}
 
- 
- 
+//output
+enter the marks of student 1
+54
+enter the marks of student 2
+65
+enter the marks of student 3
+45
+enter the marks of student 4
+85
+the marks of student entered are 1 is 54
+the marks of student entered are 2 is 65
+the marks of student entered are 3 is 45
+the marks of student entered are 4 is 85
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.>>>>
+
+#include<stdio.h>
+
+void array(int *ptr,int n)
+{
+    for(int i=0;i<n;i++){
+        printf("the value of element is %d is %d\n",i+1,*(ptr+i));
+    }
+}
+  
+  int main()
+  { 
+      int arr[]={12,3,945,4568};
+  array(arr,4);
+  return 0;
+  }
+  
+  /////output
+  the value of element is 1 is 12
+the value of element is 2 is 3
+the value of element is 3 is 945
+the value of element is 4 is 4568
+
+===========================================================================================================================================================
+ ////////multi dimensional arrays///////
+  
+  #include<stdio.h>
+  
+  int main(){
+      int n_students=3;
+      int n_sub=5;
+      
+      int marks[3][5];
+       for(int i=0;i<n_students;i++){
+           for(int j=0;j<n_sub;j++){
+           
+           printf("enter the marks of student %d is %d\n",i+1,j+1);
+           scanf("%d",&marks[i][j]);
+           }  
+       }   
+       for(int i=0;i<n_students;i++){
+           for(int j=0;j<n_sub;j++){
+           
+           printf(" the marks of student %d in subject%d is %d\n",i+1,j+1,marks[i][j]);
+           
+           }  
+       }
+       
+  }
+
+///////////////////output
+
+enter the marks of student 1 is 1
+8
+enter the marks of student 1 is 2
+88
+enter the marks of student 1 is 3
+8
+enter the marks of student 1 is 4
+65
+enter the marks of student 1 is 5
+5
+enter the marks of student 2 is 1
+5
+enter the marks of student 2 is 2
+4
+enter the marks of student 2 is 3
+5
+enter the marks of student 2 is 4
+4
+enter the marks of student 2 is 5
+54
+enter the marks of student 3 is 1
+5
+enter the marks of student 3 is 2
+4
+enter the marks of student 3 is 3
+5
+enter the marks of student 3 is 4
+4
+enter the marks of student 3 is 5
+5
+ the marks of student 1 in subject1 is 8
+ the marks of student 1 in subject2 is 88
+ the marks of student 1 in subject3 is 8
+ the marks of student 1 in subject4 is 65
+ the marks of student 1 in subject5 is 5
+ the marks of student 2 in subject1 is 5
+ the marks of student 2 in subject2 is 4
+ the marks of student 2 in subject3 is 5
+ the marks of student 2 in subject4 is 4
+ the marks of student 2 in subject5 is 54
+ the marks of student 3 in subject1 is 5
+ the marks of student 3 in subject2 is 4
+ the marks of student 3 in subject3 is 5
+ the marks of student 3 in subject4 is 4
+ the marks of student 3 in subject5 is 5
+
+/////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////\\\\\\\\\\\\\\
+
+#include<stdio.h>
+  
+  int main(){
+      int n_students=5;
+      int n_height=1;
+      int n_weight=1;
+      
+      int hw[5][1][1];
+       for(int i=0;i<n_students;i++){
+           for(int j=0;j<n_height;j++){
+               for(int k=0;k<n_weight;k++){
+                
+               printf("enter the height and weight  of student %d is h= %d\n w=%d\n",i+1,j+1,k+1);
+               scanf("%d",&hw[i][j][k]);
+           }  
+         }  
+       }   
+       
+       for(int i=0;i<n_students;i++){
+           for(int j=0;j<n_height;j++){
+               for(int k=0;k<n_weight;k++){
+                
+               printf(" the height and weeight of student  %d is h=%d\nw=%d\n is %d\n ",i+1,j+1,k+1,hw[i][j][k]);
+               
+           }  
+         }  
+       }   
+       
+  }
+       
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+ #include<stdio.h>
+  
+  int main()
+  { int num[10];
+  int *ptr=&num[0];
+  ptr= ptr+2;
+  if (ptr== &num[2])
+   { 
+      printf("these points have same locations \n");
+   }
+  else
+   { 
+      printf("thse two points have diff loactions");
+   }
+  
+  }     
+  
+  /////////////////output///////////////
+  these points have same locations 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4$
+
+#include<stdio.h>
+
+int main()
+{ int mul[10];
+
+for(int i=0;i<10;i++)
+{
+ mul[i]=5*(i+1);
+    
+}
+
+for(int i=0;i<10;i++)
+{
+printf("5x%d = %d\n",i+1,mul[i]);
+
+}
+}
+
+/////output///////
+5x1 = 5
+5x2 = 10
+5x3 = 15
+5x4 = 20
+5x5 = 25
+5x6 = 30
+5x7 = 35
+5x8 = 40
+5x9 = 45
+5x10 = 50
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^66^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
