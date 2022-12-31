@@ -184,7 +184,40 @@ the makrs you entered are 4
 :59
 the makrs you entered are 5
 :53
+ 
+ #include <stdio.h>
 
+int main()
+{ int a=234;
+int *ptr=&a;
+
+    printf("the adress of a is %u\n",ptr);
+    ptr++ ;
+    
+    printf("the adress of a after increament in adress is %u\n",ptr);
+    return 0;
+}
+//output
+the adress of a is 229452380
+the adress of a after increament in adress is 229452384
+
+#include <stdio.h>
+
+int main()
+{ int a=234,b=7,c;
+int *ptr=&a;
+int  *j=&b;
+    printf("the adress of a is %u\n",ptr);
+    printf("the adress of b is %u\n",j);
+    c=(j)-(ptr);
+    
+    printf("the differnce  is %d\n",c*4);
+    return 0;
+}
+//output
+the adress of a is 2541210284
+the adress of b is 2541210288
+the differnce  is 4
 
  
  
