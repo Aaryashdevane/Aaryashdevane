@@ -294,5 +294,68 @@ output........................
 sum =5050
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
 
+int main ()
+{int num,table;
+  cout<<"enter any number:"<< endl;
+  cin>>num;
+  cout<<num<<endl;
+  int i=1;
+  while (i<=10)
+    {
+      table= num*i;
+      cout<< num <<" * "<< i <<  " = " << table << endl;
+      i=i+1;
+    }
+ 
+}
+output;;;;;;;;;;;;;;;;enter any number:
+5
+5
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#include<iostream>
+using namespace std;
+int main()
+{int n ;
+  cout<<"enter any number"<<endl;
+  cin>>n;
+  int i =2 ;
+  while (i<n)
+    { 
+      if  ( n%i == 0)
+      {cout<<"number is not  prime number"<< i <<endl;
+    } 
+      
+      else {
+        cout<<"the number is prime no."<<i<<endl;
+      }
+      i=i+1;
+  }
+output;;;;;;;;;;;;;;;;;;;;
+enter any number
+14
+number is not  prime number2
+the number is prime no.3
+the number is prime no.4
+the number is prime no.5
+the number is prime no.6
+number is not  prime number7
+the number is prime no.8
+the number is prime no.9
+the number is prime no.10
+the number is prime no.11
+the number is prime no.12
+the number is prime no.13
