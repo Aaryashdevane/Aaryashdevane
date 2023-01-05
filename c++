@@ -386,3 +386,110 @@ ouput;;;;;;;;;;;
 ****
 ****
 ****
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+ #include<iostream> 
+using namespace std;
+int main()
+{int n;
+  cin>>n;
+  int i=1;
+while(i<=n)
+  {
+    int j = 1;
+  while (j<=n)
+    {
+      cout<<i;
+      j= j +1;
+      
+    }
+    cout<<endl;
+    i= i + 1;
+  }
+  
+}
+output;;;;;;;
+4
+1111
+2222
+3333
+4444
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+#include<iostream> 
+using namespace std;
+int main()
+{int n;
+  cin>>n;
+  int i=1;
+while(i<=n)
+  {
+    int j = 1;
+  while (j<=n)
+    {
+      cout<<j;
+      j= j +1;
+      
+    }
+    cout<<endl;
+    i= i + 1;
+  }
+  
+}
+output,,,,,,,,,
+4
+1234
+1234
+1234
+1234
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#include<iostream> 
+using namespace std;
+int main()
+{int n;
+  cin>>n;
+  int i= n;
+while(i>=1)
+  {
+    int j = n;
+  while (j>=1)
+    {
+      cout<<j;
+      j= j - 1;
+      
+    }
+    cout<<endl;
+    i= i - 1;
+  }
+  ouput;;;;;;;;;;;;;;;
+  4
+4321
+4321
+4321
+4321
+{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+#include <iostream>
+using namespace std;
+int main()
+{int n ;
+  cin>>n;
+  int i = 1;
+  int count = 1;
+  while(i<=n)
+    {
+      int j =1;
+      while(j<=n)
+        {
+          cout<<count;
+          count= count +1;
+          j = j +1;
+          
+        }
+      cout<<endl;
+      i = i+1;
+        
+    }
+    output;;;;;;;;;;;;;;;;
+    3
+123
+456
+789
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
