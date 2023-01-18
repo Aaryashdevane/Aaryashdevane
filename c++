@@ -493,3 +493,236 @@ int main()
 456
 789
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //out<<"Hello World";
+int n;
+cin>>n;
+int count=1;
+for(int i=1;i<=n; i + 1)
+{
+    for(int j;j<=n;j+1)
+    {
+        cout<<count;
+        count=count +1;
+    }
+    cout<<endl;
+}
+    return 0;
+}
+
+output;;;;;;;;;;;;;;;;;;;;;;;;;;'
+4
+*
+**
+***
+****
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    while(row<=n)
+    { int col=1;
+      while(col<=row)
+      {
+          cout<<row;
+          col=col +1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;;;;;;;;;;;;
+4
+1
+22
+333
+4444
+==========================================================================================================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    
+    while(row<=n)
+    { int col=1;
+      while(col<=row)
+      {
+          cout<<row-col+1;
+          
+          col=col + 1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;;;;;;;;;;;;;;;;;;
+4
+1
+21
+321
+4321
+////////////////////////////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    
+    
+    while(row<=n)
+    { int col=1;
+      while(col<=n)
+      {char ch= 'A'+col -1;
+          cout<<ch;
+          
+          col=col + 1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;
+3
+ABC
+ABC
+ABC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    
+    int count=0;
+    while(row<=n)
+    { int col=1;
+      while(col<=n)
+      {char ch= 'A'+count;
+      //int count=1;
+      count=count+1;
+      
+          cout<<ch;
+          
+          col=col + 1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;;;;;
+3
+ABC
+DEF
+GHI
+########################################################################################################################################################3#
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    
+    //int count=0;
+    while(row<=n)
+    { int col=1;
+      while(col<=n)
+      { char ch='A'+row+col-2;
+          cout<<ch;
+          col=col + 1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;;;;;;;;
+4
+ABCD
+BCDE
+CDEF
+DEFG
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    
+    //int count=0;
+    while(row<=n)
+    { int col=1;
+      while(col<=row)
+      { char ch='A'+row-1;
+          cout<<ch;
+          col=col + 1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;;;;;;;;;;
+3
+A
+BB
+CCC
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int row=1;
+    
+    //int count=0;
+    while(row<=n)
+    { int col=1;
+      while(col<=row)
+      { char ch='A'+row+col-2;
+          cout<<ch;
+          col=col + 1;
+          
+      }
+      cout<<endl;
+      row=row + 1;
+      
+    }
+}
+output;;;;;;;
+4
+A
+BC
+CDE
+DEFG
+1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
