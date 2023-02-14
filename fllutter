@@ -1,1 +1,55 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp( MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  //naming should be like second word should start with cap.
+   MyApp({Key? key}) : super(key: key);
+
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+String english = "Hello Flutter !";
+String spanish = " Hola Flutter !";
+
+
+class _MyAppState extends State<MyApp> {
+  String display = english;
+
+  @override //default properties
+  Widget build(BuildContext context) {
+    return /*here material app is widget*/ MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hello Flutter App"),
+          centerTitle: true,
+          leading: Icon(Icons.home),
+          backgroundColor: Colors.amber,
+          actions: [IconButton(onPressed: () {
+           setState(() {
+             if(display == english){
+               display=spanish;
+             }
+             else{
+               display=english;
+             }
+
+           });
+
+          }, icon: Icon(Icons.refresh))],
+        ),
+        body: Center(
+            child: Text(
+          display,
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        )),
+      ),
+    );
+  }
+}
 
