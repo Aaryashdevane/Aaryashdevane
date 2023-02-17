@@ -244,3 +244,58 @@ class MyApp extends StatelessWidget {
 }
 
 
+<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+copy to vighnesh
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Text('Education'),
+                          Divider(
+                            thickness: 1,
+                            color: Colors.black,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+
+                              Text('B.Tech'),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text('WCE Sangli'),
+                            ],
+
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+
+                              Text('B.Tech'),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text('WCE Sangli'),
+                            ],
+
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+
+                              Text('B.Tech'),
+                              SizedBox(
+                                width: 30,
+                              ),
+                              Text('WCE Sangli'),
+                            ],
+
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  )
+
